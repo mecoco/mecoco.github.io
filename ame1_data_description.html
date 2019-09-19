@@ -19,29 +19,29 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>mecoco: Island Biogeography</title>
+  <title>mecoco: Data description</title>
   
-  <meta property="description" itemprop="description" content="The testing of island-biogeographical theories would benefit from more standardised analysis approaches."/>
+  <meta property="description" itemprop="description" content="ame1 project - studying the relation between home range size and activity"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="mecoco: Island Biogeography"/>
+  <meta property="og:title" content="mecoco: Data description"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="The testing of island-biogeographical theories would benefit from more standardised analysis approaches."/>
+  <meta property="og:description" content="ame1 project - studying the relation between home range size and activity"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="mecoco"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="mecoco: Island Biogeography"/>
-  <meta property="twitter:description" content="The testing of island-biogeographical theories would benefit from more standardised analysis approaches."/>
+  <meta property="twitter:title" content="mecoco: Data description"/>
+  <meta property="twitter:description" content="ame1 project - studying the relation between home range size and activity"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Island Biogeography"]},{"type":"character","attributes":{},"value":["The testing of island-biogeographical theories would benefit from more standardised analysis approaches."]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Data description"]},{"type":"character","attributes":{},"value":["ame1 project - studying the relation between home range size and activity"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1272,7 +1272,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Island Biogeography","description":"The testing of island-biogeographical theories would benefit from more standardised analysis approaches.","authors":[]}
+{"title":"Data description","description":"ame1 project - studying the relation between home range size and activity","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1323,13 +1323,359 @@ In preparation
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Island Biogeography</h1>
-<p>The testing of island-biogeographical theories would benefit from more standardised analysis approaches.</p>
+<h1>Data description</h1>
+<p>ame1 project - studying the relation between home range size and activity</p>
 </div>
 
 
 <div class="d-article">
-<p>We are preparing an interesting data set and working out a protocol to initiate a first method comparison project in the domain of island biogeography. If you are interested to contribute, please get in touch: <a href="mailto:mecoco.project@gmail.com" class="email">mecoco.project@gmail.com</a></p>
+<h1 id="introduction">Introduction</h1>
+<p>This document describes the contents of the data sets used in the ame1 project. To learn more about the project, see <a href="ame1.html">the project overview page</a>).</p>
+<p>The ame1 data have been collected and is curated within the <a href="http://eurodeer.org/">Eurodeer</a> consortium. It comprises gps tracks for individual roe deer, activity measurements for the same individuals (derived from accelerometer signals) and a number of environmental attributes for each gps-fix. In addition, raster maps (for the environmental attributes) are provided for the regions in which the gps-tracks are located.</p>
+<p>The data selection has been made to strike a good balance between:</p>
+<ul>
+<li>quality (high temporal resolution, availability of activity data)</li>
+<li>sample size (sufficient length of observation period, number of individuals, number of study areas)</li>
+<li>relevant heterogeneity (ecological differences among populations as well als observational differences due to the use of several activity sensors)</li>
+</ul>
+<p>This made us use the following criteria for including populations and animals in our study:</p>
+<ul>
+<li>populations had to consist of at least 8 individuals</li>
+<li>the animal had to be monitored for at least 305 days (~10 months)</li>
+<li>gps ahad to be available at relatively high resolution</li>
+</ul>
+<h1 id="location-and-sample-size">Location and sample size</h1>
+<p>The data set comprises 141 individuals from 6 study areas (CH, Swiss Alps; IT, Italian Alps; FR, southwest France; SE-DE, southeastern Germany; S-DE south Germany; PL, northeastern Poland). Table 1 lists the number of animals as wel as the duration of the study period for each study site.</p>
+<p>Per study site we selcted 75% of the animals to be used for model development and 25% for evaluation purposes. The data for model development are provided to all participants in the first phase of the project, the evaluation data will be provided after the first part of the analysis phase has been completed.</p>
+<p><em>Table 1.</em> Number of animals studied per population. The total duration of the studies is also given (in days). Within this total duration, individual animals have been tracked for different periods.</p>
+<table>
+<thead>
+<tr class="header">
+<th>country code</th>
+<th style="text-align: right;">population ID</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CH</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">1214</td>
+</tr>
+<tr class="even">
+<td>IT</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">832</td>
+</tr>
+<tr class="odd">
+<td>FR</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">1469</td>
+</tr>
+<tr class="even">
+<td>PL</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1683</td>
+</tr>
+<tr class="odd">
+<td>S-DE</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">1707</td>
+</tr>
+<tr class="even">
+<td>SE-DE</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">1127</td>
+</tr>
+</tbody>
+</table>
+<h1 id="data-structure">Data structure</h1>
+<p>The data is stored in 3 separate tables as csv-files:</p>
+<ol type="1">
+<li>animalsensordata_mecoco.csv</li>
+<li>gpsdata_mecoco.csv</li>
+<li>actdata_mecoco.csv</li>
+</ol>
+<p>And a folder with environmental data layers per study area (envdata)</p>
+<p>The file animalsensordata_mecoco.csv contains relevant properties per tagged animal (sex, age, and period of sensor-deployment). A description of its variables is given in Table 2.</p>
+<p>The file gpsdata_mecoco.csv contains the GPS fixes along with with environmental data at each gps-fix. A description of the variables in this file is given in Table 3.</p>
+<p>The file actdata_mecoco.csv contains the activity data, and the description of the variables in this file is given in Tables 4 and 5.</p>
+<p><br/> <em>Table 2.</em> Individual properties</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name:</th>
+<th>Variable Description:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>study_areas_id</td>
+<td>identifier of the study area</td>
+</tr>
+<tr class="even">
+<td>study_name</td>
+<td>name of the study area</td>
+</tr>
+<tr class="odd">
+<td>animals_id</td>
+<td>identifier of the animal</td>
+</tr>
+<tr class="even">
+<td>gps_sensors_id</td>
+<td>identifier of the gps sensor</td>
+</tr>
+<tr class="odd">
+<td>activity_sensors_id</td>
+<td>identifier of the activity sensor</td>
+</tr>
+<tr class="even">
+<td>vendor</td>
+<td>name of the vendor of the gps and activity sensors</td>
+</tr>
+<tr class="odd">
+<td>sex</td>
+<td>sex of the tagged animal - male (m) or female (f)</td>
+</tr>
+<tr class="even">
+<td>year_birth</td>
+<td>year of birth of the tagged animal</td>
+</tr>
+<tr class="odd">
+<td>year_birth_exact</td>
+<td>true if the year of birth is known exactly and false if it is an approximation.</td>
+</tr>
+<tr class="even">
+<td>gps_start_time</td>
+<td>start date and time for gps measurements</td>
+</tr>
+<tr class="odd">
+<td>gps_end_time</td>
+<td>end date and time for gps measurements</td>
+</tr>
+<tr class="even">
+<td>act_start_time</td>
+<td>start date and time for activity measurements</td>
+</tr>
+<tr class="odd">
+<td>act_end_time</td>
+<td>end date and time for activity measurements</td>
+</tr>
+</tbody>
+</table>
+<p><br/> <em>Table 3.</em> GPS-tracks, annotated with environmental data.</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name:</th>
+<th>Variable Description:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>study_areas_id</td>
+<td>identifier of the study area</td>
+</tr>
+<tr class="even">
+<td>animals_id</td>
+<td>identifier of the animal</td>
+</tr>
+<tr class="odd">
+<td>gps_sensors_id</td>
+<td>identifier of the GPS sensor</td>
+</tr>
+<tr class="even">
+<td>activity_sensors_id</td>
+<td>identifier of the activity sensor</td>
+</tr>
+<tr class="odd">
+<td>acquisition_time</td>
+<td>date and time of the GPS acquisition in UTC</td>
+</tr>
+<tr class="even">
+<td>longitude</td>
+<td>longitude in decimal degrees (WGS84 coordinate reference system)</td>
+</tr>
+<tr class="odd">
+<td>latitude</td>
+<td>latitude in decimal degrees (WGS84 coordinate reference system)</td>
+</tr>
+<tr class="even">
+<td>gps_validity_code</td>
+<td>0 = acquisition without coordinates; 1 = valid location</td>
+</tr>
+<tr class="odd">
+<td>corine_2006</td>
+<td>corine land cover class produced in 2006. <sup>1</sup></td>
+</tr>
+<tr class="even">
+<td>corine_2012</td>
+<td>corine land cover class produced in 2012. <sup>1</sup></td>
+</tr>
+<tr class="odd">
+<td>ndvi_modis_boku</td>
+<td>NDVI derived from MODIS (values 0 to 255). <sup>2</sup></td>
+</tr>
+<tr class="even">
+<td>altitude_copernicus</td>
+<td>altitude in meters, Source: Copernicus project <sup>3</sup></td>
+</tr>
+<tr class="odd">
+<td>slope_copernicus</td>
+<td>slope steepness in degrees <sup>3</sup></td>
+</tr>
+<tr class="even">
+<td>aspect_copernicus</td>
+<td>orientation of slope in degrees clockwise from north, no value if slope = 0 <sup>3</sup></td>
+</tr>
+<tr class="odd">
+<td>treecover_copernicus</td>
+<td>percent tree cover (values 0 to 100); 254 = unclassifiable (no satellite image available, clouds, shadows or snow) <sup>3</sup></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> Source: <a href="https://land.copernicus.eu/pan-european/corine-land-cover" class="uri">https://land.copernicus.eu/pan-european/corine-land-cover</a> <a href="http://clc.gios.gov.pl/doc/clc/CLC_Legend_EN.pdf">Description of the land cover codes (legend)</a>]. Note that there are three levels of classification.<br/> <sup>2</sup> Source: Vuolu et al. (2012). <a href="http://ivfl-info.boku.ac.at/satellite-data-processing">Modis-NDVI documentation</a><br/> <sup>3</sup> Source: <a href="https://land.copernicus.eu" class="uri">https://land.copernicus.eu</a> <a href="https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1-0-and-derived-products/eu-dem-v1.0?tab=metadata">Documentation of DEM (and derived products such as altitude, slope and aspect) documentation</a>. <a href="https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps/2012?tab=metadata">Documentation of tree cover</a>.</p>
+<p><br/> <em>Table 4.</em> Activity data.</p>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable Name:</th>
+<th>Variable Description:</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>study_areas_id</td>
+<td>identifier of the study area</td>
+</tr>
+<tr class="even">
+<td>animals_id</td>
+<td>identifier of the animal</td>
+</tr>
+<tr class="odd">
+<td>gps_sensors_id</td>
+<td>identifier of the GPS sensor</td>
+</tr>
+<tr class="even">
+<td>activity_sensors_id</td>
+<td>identifier of the activity sensor</td>
+</tr>
+<tr class="odd">
+<td>acquisition_time</td>
+<td>date and time of the activity acquisition in UTC</td>
+</tr>
+<tr class="even">
+<td>activity_sensors_mode_code</td>
+<td>type of activity sensor, 1: vectronics, 3: lotek 3300, 5: e-obs.Code</td>
+</tr>
+<tr class="odd">
+<td>act_1</td>
+<td>depends on type of activity sensor (see Table 5)</td>
+</tr>
+<tr class="even">
+<td>act_2</td>
+<td>depends on type of activity sensor (see Table 5)</td>
+</tr>
+<tr class="odd">
+<td>act_3</td>
+<td>depends on type of activity sensor (see Table 5)</td>
+</tr>
+</tbody>
+</table>
+<p><br/> <em>Table 5.</em> The meaning of act_1, act_2, and act_3, conditional on the value for activity_sensors_mode_code in Table 4. The values range from 0 to 255 in all cases, unless mentioned otherwise.</p>
+<table>
+<thead>
+<tr class="header">
+<th>activity_sensors_mode_code</th>
+<th>Meaning of Act1, Act2 and Act3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 - vectronics</td>
+<td>act_1: number of forward-backward moves</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>act_2: number side-to-side moves</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>act_3: not used</td>
+</tr>
+<tr class="even">
+<td>3 - lotek 3300</td>
+<td>act_1: number of side-to-side moves</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>act_2: number of up-down moves</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>act_3: percentage of time in head down position (0 to 100)</td>
+</tr>
+<tr class="odd">
+<td>5 - e-obs</td>
+<td>act_1: number of forward-backward moves</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>act_2: number of side-to-side moves</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>act_3: number of up-down moves</td>
+</tr>
+</tbody>
+</table>
+<p>For each of the environmental attributes in Table 3, a raster map is available per study site which encloses all the GPS locations for that study site. These raster maps are stored as arc-ascii raster files in the folder envdata (and a subfolder per study area). NDVI is changing over short time spans hence this data is stored as a sequence of raster layers at a 7-day resolution (covering the period over which gps and activity data are available for the respective study area).</p>
+<h1 id="description-of-populations">Description of populations</h1>
+<p><strong>CH - Swiss Alps (Bernese, study areas id = 25)</strong></p>
+<p>This Alpine population ranges (46.559905 N, 7.513052 E) in an agricultural landscape with predominantly pastures in which fragmented forest patches are found. Both eco-tourism (such as hiking) and winter sports are important factors of human disturbance. The study area covers approximately 1500 km2 and altitude ranges between 600 and 3500 m a.s.l.. Human settlements and an open deforested pasture landscape dominate the bottom of the valleys and forest is more common at higher slopes, but highly fragmented. About 30% of the area is covered by forest, and the tree line is at 1800-1950 m. Hunting is allowed for a 6 week period in October and November and roe deers’ main predator, the Eurasian Lynx (Lynx lynx) is present with a density of 2.13 independent lynx/100 km2, also red fox (Vulpes vulpes) is present. See Gehr (2016) page 26 for a more detailed description.</p>
+<p>This dataset of population CH (Table 1) contains 41 individuals monitored between November 2011 and April 2015 (3.3 years; 1214 days). The shortest and longest monitoring period are respectively 306 and 889 days, and the average is 663 days (σ = 153 days).</p>
+<p><strong>IT - Italian Alps (Bondone, study areas id = 1)</strong></p>
+<p>This semi-Alpine population (45.988659 N, 11.034130 E) ranges in a forest rich landscape with as main factor of human disturbance tourism (eco-tourism in summer; winter sports in winter). The area consists of two subareas: a higher elevation area (&gt; 1000 m) with mainly pastures for grass production (50% forest) and a lower elevation area (&lt; 1000 m) with mainly forest habitat (75% forest). The altitude ranges between 200 and 2300 m a.s.l.. Hunting is allowed for a 3 month period from September to November, but only at lower elevation. The predator species present in this area are the brown bear and red fox. See also De Groeve et al. (2016).</p>
+<p>This dataset of population IT (Table 1) contains 8 individuals monitored between January 2005 and May 2007 (2.3 years; 832 days). The shortest and longest monitoring are respectively 312 and 444 days, and the average is 372 days (σ = 39 days).</p>
+<p><strong>FR - Southwest France (Aurignac, study areas id = 8)</strong></p>
+<p>This population (43.216667 N, 0.866667 E) ranges in a mixed agricultural landscape of open fields and pastures and small woodland patches (average size of 3 ha), with a central larger forest of 800 ha. The total area covers about 7500 ha and the landscape is hilly rising up to 380 m a.s.l.. Hunting is allowed on a regular basis by drive hunts with dogs during winter (September-January) and stalking during summer (June-August; bucks only). The only predator present in this study area is the red fox. See Hewison et al. (2007) and Morellet et al. (2011).</p>
+<p>This dataset of population FR (Table 1) contains 37 individuals monitored between January 2010 and January 2014 (4.0 years; 1469 days). The shortest and longest monitoring are respectively 320 and 339 days, and the average is 331 days (σ = 5 days).</p>
+<p><strong>SE-DE - Southeast Germany (Bavarian Forest, study areas id = 2)</strong></p>
+<p>This population (48.944677 N, 13.416205 E) ranges in the Bavarian Forest National Park situated in south-eastern Germany. The national park covers an area of 240 km2. The area is mountainous with an altitudinal range between 600 and 1453 m a.s.l. Within the park there are three different types of forest described in Heurich et al. (2012). An interesting characteristic of the park is the mass proliferation spruce bark beetle (Ips typographus) resulting in the death of mature spruce stands over an area of about 5,600 ha. Hunting is allowed from the 1st of September until the 15th of January only in about 20% of the park (Heurich et al. 2011). Lynx (0.9 lynx/ 100 km2) and red fox are present in the park. This dataset of population SE-DE (Table 1) contains 24 individuals monitored between January 2010 and March 2013 (3.1 years; 1127 days). The shortest and longest monitoring are respectively 322 and 616 days, and the average is 446 days (σ = 78 days).</p>
+<p><strong>SW-DE - Southern Germany (Upper Rhine valley, study areas id = 15)</strong></p>
+<p>This population (48.67 N, 8.00 E) ranges in an intensively farmed agricultural area interspersed by small woodland patches. The total area covers about 14,000 ha and is located at an altitude of 150 m a.s.l.. Hunting is allowed from the 1st of September until the 31st of January. The only predator present in this study area is the red fox. See Kammerle et al. (2017).</p>
+<p>This dataset of population S-DE (Table 1) contains 23 individuals monitored between February 2010 and November 2014 (4.7 years; 1707 days). The shortest and longest monitoring are respectively 336 and 989 days, and the average is 563 days (σ = 187 days).</p>
+<p><strong>PL - Northeastern Poland (Bialowieza National Park, study areas id = 16)</strong></p>
+<p>This population (52.762495 N, 23.744535 E) ranges at the outside borders of the Bialowieza National Park situated in northeastern Poland. The Bialowieza National Park itself is part of the larger Bialowieza Primeval Forest (∼1,450 km2) located on the Polish-Belarussian border. On the Polish side, the Bialowieza Forest (580 km2) consists of the Bialowieza National Park surrounded by managed forests and small reserves. The core of the park has had a strict nature reserve (47 km2) since 1921, where no motorized equipment is allowed, and human access is strictly controlled and limited. Tourist access in the natural reserve is also limited (May-September: 100 tourists/day; October-April: 20 tourists/day) under professional guidance. Surrounding the strict reserve is a 5-3 km2 area of national park where tourists can visit without a permit or guide (i.e. this is where the roe deer population ranges). The Bialowieza National Park is the last remnant of the pristine European lowland forest, most of which has never been cut, and contains 3 main forest types described in (Kamler et al. 2006). The Bialowieza National Park has one of the most diverse communities of native predator-prey species in Europe. In total there are 5 native ungulates, including roe deer (Capreolus capreolus), red deer (cervus elaphus), European bison (Bison bonasus), moose (Alces alces), and wild boar (Sus scrofa). Two large carnivores, the wolf and Eurasian lynx, occur in healthy and stable populations (Jędrzejewska and Jędrzejewski 1998), and human hunting is prohibited. Within the study area, located at the borders of the park there are two subareas, one with mainly agricultural land (only presence of red fox) and one area with mainly forest (presence of wolf, lynx and red fox). See Kamler et al. (2007) for more information on the National Park.</p>
+<p>This dataset of population PL (Table 1) contains 10 individuals monitored between April 2008 and November 2012 (4.6 years; 1683 days). The shortest and longest monitoring are respectively 306 and 652 days, and the average is 494 days (σ = 99 days).</p>
+<h1 id="literature">Literature</h1>
+<p>De Groeve, J., Van de Weghe, N., Ranc, N., Neutens, T., Ometto, L., Rota‐Stabelli, O., &amp; Cagnacci, F. (2016). Extracting spatio‐temporal patterns in animal trajectories: An ecological application of sequence analysis methods. Methods in Ecology and Evolution, 7(3), 369-379.</p>
+<p>Gehr, B. (2016). Predator-prey interactions in a human-dominated landscape (Doctoral dissertation, Universität Zürich).</p>
+<p>Heurich M, Baierl F, Günther S, Sinner KF (2011) Management and conservation of large mammals in the Bavarian Forest National Park. Silva Gabreta 17(1):1–18.</p>
+<p>Heurich, M., Möst, L., Schauberger, G., Reulen, H., Sustr, P., &amp; Hothorn, T. (2012). Survival and causes of death of European Roe Deer before and after Eurasian Lynx reintroduction in the Bavarian Forest National Park. European Journal of Wildlife Research, 58(3), 567-578.</p>
+<p>Hewison, A. M., Angibault, J. M., Cargnelutti, B., Coulon, A., Rames, J. L., Serrano, E., … &amp; Morellet, N. (2007). Using radio-tracking and direct observation to estimate roe deer Capreolus capreolus density in a fragmented landscape: a pilot study. Wildlife Biology, 13(3), 313-321.</p>
+<p>Kamler, J. F., Jędrzejewska, B., &amp; Jędrzejewski, W. (2007). Activity patterns of red deer in Białowieża National Park, Poland. Journal of Mammalogy, 88(2), 508-514.</p>
+<p>Morellet, N., Van Moorter, B., Cargnelutti, B., Angibault, J. M., Lourtet, B., Merlet, J., … &amp; Hewison, A. M. (2011). Landscape composition influences roe deer habitat selection at both home range and landscape scales. Landscape Ecology, 26(7), 999-1010.</p>
+<p>Vuolo F., Mattiuzzi M., Klisch A., Atzberger C. (2012). Data service platform for MODIS NDVI time series pre-processing at BOKU Vienna: current status and future perspectives. Proc. SPIE 8538, Earth Resources and Environmental Remote Sensing/GIS Applications III, 85380A (October 25, 2012); <a href="https://dx.doi.org/doi:10.1117/12.974857" class="uri">https://dx.doi.org/doi:10.1117/12.974857</a>.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
