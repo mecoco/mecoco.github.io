@@ -1332,48 +1332,43 @@ In preparation
 <h1 id="introduction">Introduction</h1>
 <p>This protocol defines the key concepts and the required outputs at the various project stages in the ame1 project, which focuses on answering the question: <strong>How is roe deer home range size related to level of activity both within and between individuals, when controlling for resource availability and landscape structure?</strong> (to learn more about the project, see <a href="ame1.html">the project overview page</a>).</p>
 <h1 id="definitions">Definitions</h1>
-<p>This project analyses the relation between home range, activity and resource availability - important ecological concepts which have been defined and quantified in numerous ways. We will try to limit the variation that arises due to a different understanding of these concpets. Therefore provide definitions which we will use in this project:</p>
+<p>The research question contains a number of terms that may be differently understood by different researcherers, notably: home range, activity, resource availability and landscape structure. These four concepts have been defined and quantified in numerous ways. We will try to limit the variation that arises due to a different understanding of these by providing definitions which we will use in this project:</p>
 <ul>
 <li>home range: an area of limited spatial extent over which an animal repeatedly travels in search of food and mates to survive and reproduce (Börger, Dalziel and Fryxell, 2008); this definition implies that the home range size may vary over time;</li>
 <li>activity: the degree to which an animal is not at rest, for roe deer (with activity sensors on neck-collars) it reflects a combination of small scale movements and foraging activity;</li>
-<li>resource availability: quantity and quality of forage which is accessible by the animal.</li>
+<li>resource availability: quantity and quality of forage which is accessible by the animal;</li>
+<li>landscape structure: the spatio-temporal configuration of (suitable as well as unsuitable) habitat and barriers to movement (e.g. habitat amount; patch size, persistence and isolation; edge density in suitable habitat; roads).</li>
 </ul>
-<p>We are aware of the narrow definition we have chosen for ‘resource’ (here focusing only on food, and ignoring e.g. shelter and water). Given known constraints to roe deer in Europe and type of environmental variables we have available in our analysis, this seems to be a sensible choice here.</p>
+<p>Our definitions are meant to be effective within the scope of our study system - hence not for general use but especially relevant to roe deer in Europe and considering the type of biotelemetry and environmental variables we have available in our analysis.</p>
+<h1 id="data-use">Data use</h1>
+<p>The teams can only use the data that has been made available to this project (see the <a href="ame1_data_description.html">data description</a> ) to identify and fit models. With this we mean that no extra predictors or response variables can be brought into the analysis. It is however not a requirement to use all the available variables or ancillary spatial data (the raster maps) in the analysis. The original variables (and spatial data) can be combined in any way to derive new variables.</p>
+<p>The analysis should involve all animals in the data set. Not all cases (i.e. every gps-fix and/or activity observation) have to be used. But if any cases are omitted, clear criterea should be used for exclusion and supporting arguments should be provided of why this choice was made.</p>
+<p>It is possible (and expected) that teams will use information from existing literature is to inform the analysis, e.g. for deriving suitable variables and model structures. Prior knowledge can also guide the choice of certain parameter values in the analysis. Teams should document the source of this prior knowledge as good as possible (i.e. provide references to the original sources).</p>
 <h1 id="reporting-requirements">Reporting requirements</h1>
 <h2 id="st-round-of-analysis-reporting">1st round of analysis &amp; reporting</h2>
 <h3 id="a---quantification-of-concepts">A - quantification of concepts</h3>
-<p>The teams should explain in detail how they quantify the three key concepts (home range size, activity and resource availability). This explanation should include:</p>
+<p>The teams should explain how they quantify home range size, activity, resource availability and landscape structure. Hereby it is not mandatory to provide algorithms or models for each concept separately. It is e.g. possible to combine resource availability and landscape structure as a composite variable.</p>
+<p>It is also not a requirement to derive the concepts via a single deterministic equation or a statistical model. A computational algorithm that doesn’t fit in these classes but leads to the quantitative definition could also be used. For brevity, we will hencefoth use the term ‘method’ to denote any model or computational algorithm.</p>
+<p>The explanation of home range size, activity, resource availability and landscape structure quantification should include:</p>
 <ul>
-<li>if the method or model is newly developed:
+<li>in case it is newly developed:
 <ul>
-<li>a complete outline of the algorithm leading to the quantification, or the method for model fitting</li>
+<li>a complete outline of the steps leading to the quantification (including the method for model fitting, if relevant)</li>
 </ul></li>
-<li>if an existing method is used:
+<li>in case it already exist:
 <ul>
-<li>the name under which the method is known (if available)</li>
+<li>the name under which the method is known</li>
 <li>reference to the literature describing the method itself as well as literature where the method has been applied</li>
 </ul></li>
+<li>parameter values (with the source(s) for these) or the method to establish the parameter values</li>
 <li>arguments about why this method was selected or developed</li>
 <li>arguments for the selection of parameter values in the chosen method</li>
 </ul>
 <h3 id="b---model-or-method-to-relate-the-concepts-and-answer-the-research-question.">B - model or method to relate the concepts and answer the research question.</h3>
-<p>In addition to details about the quantification of concepts, teams are requested to provide details about the modeling approach to relate the three concepts (and thereby answer the research question).</p>
-<p>First the general model class that was used (e.g. a simulation model, a statistical model) should be named.</p>
-<p>If a statistical model is used, the underlying conceptual rationale (or dynamics) should be explained in relation to the chosen variables in the model.</p>
-<p>Subsequently the same aspects of the chosen method/model should be described as under (A)</p>
-<ul>
-<li>if the method or model is newly developed:
-<ul>
-<li>a complete outline of the algorithm leading to the quantification, or the method for model fitting</li>
-</ul></li>
-<li>if an existing method is used:
-<ul>
-<li>the name under which the method is known (if available)</li>
-<li>reference to the literature describing the method itself as well as literature where the method has been applied</li>
-</ul></li>
-<li>arguments about why this method was selected or developed</li>
-<li>arguments for the selection of parameter values in the chosen method</li>
-</ul>
+<p>As a next step, after the quantification of concepts, teams are requested to provide details about the method by which the relationship(s) among the concepts are analysed (and thereby answer the research question).</p>
+<p>First, a general descripion of the method (e.g. a simulation model or a statistical model) should be provided. This should be followed by further details on design choices, relating to the main processes that are considered in the method. Even if a statistical modeling approach is used, which may not directly describe processes between variables of interest (but rather correlations), the relation between processes (dynamics) assumed to be present in the system and their relation to the chosen variables in the model(s) should be articulated.</p>
+<p>Next, the way by which the method is applied to the data (e.g. separate models per study site, or one model for all sites) and how parameterization and/or calibration takes place should be detailed.</p>
+<p>If a number of candidate models are evaluated on the data, these candidate models should be specified explicitly and the criteria used to either keep or dismiss any of these should be provided.</p>
 <h2 id="round-robin-feedback">Round robin feedback</h2>
 <p>description will follow</p>
 <!--radix_placeholder_article_footer-->
